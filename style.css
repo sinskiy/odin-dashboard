@@ -19,6 +19,7 @@ body {
   grid-template-columns: 1fr 4fr;
 
   background-color: white;
+  color: black;
 }
 
 .sidebar {
@@ -96,9 +97,50 @@ main {
 }
 
 .label {
-  color: black;
-
   font-size: 1.125rem;
   font-weight: bold;
   text-wrap: nowrap;
+}
+
+.user-and-actions {
+  display: flex;
+  justify-content: space-between;
+}
+
+.user--large {
+  display: grid;
+  grid-template-columns: repeat(2, max-content);
+  align-items: center;
+  gap: 1rem;
+}
+
+.user--large h1 {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.user--large .welcome {
+  font-size: 1rem;
+}
+
+.actions {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  align-items: center;
+}
+
+.actions button {
+  padding: 1rem 3rem;
+  height: fit-content;
+
+  background-color: var(--primary);
+  color: white;
+
+  border: none;
+  border-radius: 9999px;
+
+  font-size: 1rem;
+  font-weight: bold;
 }
