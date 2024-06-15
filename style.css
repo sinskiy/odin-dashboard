@@ -1,20 +1,43 @@
 * {
   box-sizing: border-box;
+
   margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: unset;
+}
+
+:root {
+  --primary: #0891b2;
+  --shadow: rgb(0 0 0 / 0.2);
 }
 
 body {
   display: grid;
-  grid-template-columns: 1fr 3fr;
+  grid-template-columns: 1fr 4fr;
 }
 
-body header {
+.sidebar {
   padding: 2rem;
+
+  background-color: var(--primary);
+  color: white;
+  box-shadow: 3px 0 var(--shadow);
 }
 
-body header nav {
-  margin: 3rem 0;
+.sidebar h2 {
+  font-size: 2rem;
+}
 
+.sidebar nav {
   display: grid;
   gap: 1rem;
+
+  margin: 3rem 0;
+
+  color: white;
+
+  font-size: 1.5rem;
 }
