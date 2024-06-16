@@ -183,8 +183,9 @@ main p {
 .project--wrapper {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-  grid-auto-rows: minmax(200px, 1fr);
   gap: 2rem;
+
+  height: calc(100% - 2.5rem);
 }
 
 .projects article {
@@ -254,6 +255,30 @@ main p {
 }
 
 .trending {
+  align-self: end;
   grid-column: 2 / -1;
   grid-row: 2 / 2;
+}
+
+.trending ul {
+  display: grid;
+  gap: 2rem;
+}
+
+.trending li {
+  display: grid;
+  grid-template-columns: repeat(2, max-content);
+  gap: 1rem;
+
+  align-items: center;
+  align-content: center;
+}
+
+.trending .user-info {
+  display: grid;
+}
+
+.trending .repo {
+  font-size: 1rem;
+  color: var(--para);
 }
