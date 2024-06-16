@@ -19,6 +19,21 @@ img {
   object-fit: cover;
 }
 
+button,
+a {
+  transition: filter 150ms, transform 100ms;
+}
+
+button:hover,
+a:hover {
+  filter: brightness(125%);
+}
+
+button:active,
+a:active {
+  transform: scale(95%);
+}
+
 :root {
   --primary: #0284c7;
   --shadow: rgb(0 0 0 / 0.2);
@@ -215,20 +230,7 @@ main p {
 
   display: grid;
   grid-template-rows: repeat(2, min-content) 1fr;
-}
-
-.projects article::before {
-  content: "";
-
-  position: absolute;
-  top: 0;
-  bottom: 0;
-
-  border-radius: 1rem 0 0 1rem;
-
-  width: 0.5rem;
-
-  background-color: goldenrod;
+  border-left: 0.5rem solid goldenrod;
 }
 
 .projects h3 {
