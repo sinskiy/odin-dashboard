@@ -38,11 +38,14 @@ body {
 }
 
 .sidebar {
+  position: relative;
+  z-index: 20;
+
   padding: 2rem;
 
   background-color: var(--primary);
   color: white;
-  box-shadow: 3px 0 var(--shadow);
+  box-shadow: 3px 0 5px var(--shadow);
   grid-row: 1 / -1;
 }
 
@@ -174,6 +177,8 @@ aside > ul {
   background-color: white;
 
   border-radius: 1rem;
+
+  box-shadow: 0 5px 5px var(--shadow);
 }
 
 main p {
