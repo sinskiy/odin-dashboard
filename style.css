@@ -47,19 +47,19 @@ body {
   font-size: 1.5rem;
 }
 
-.topbar,
-.user-and-actions {
-  padding-left: 4rem;
-  padding-right: 6rem;
-}
-
 .topbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 20rem;
+  position: relative;
+  z-index: 10;
 
-  padding-top: 1rem;
+  display: grid;
+  grid-template: min-content min-content / min-content min-content;
+  justify-items: end;
+  justify-content: space-between;
+  row-gap: 2rem;
+
+  padding: 1rem 6rem 1rem 4rem;
+
+  box-shadow: 0 5px 10px var(--shadow);
 }
 
 .topbar .search {
@@ -99,18 +99,6 @@ body {
   font-size: 1.125rem;
   font-weight: bold;
   text-wrap: nowrap;
-}
-
-.user-and-actions {
-  position: relative;
-  z-index: 10;
-
-  display: flex;
-  justify-content: space-between;
-  box-shadow: 0 5px 5px var(--shadow);
-
-  padding-top: 2rem;
-  padding-bottom: 1rem;
 }
 
 .user--large {
