@@ -59,7 +59,7 @@ body {
 
 .sidebar nav {
   display: grid;
-  gap: 1rem;
+  gap: 1.5rem;
 
   margin: 3rem 0;
 
@@ -79,8 +79,7 @@ body {
   z-index: 10;
 
   display: grid;
-  grid-template: min-content min-content / min-content min-content;
-  justify-items: end;
+  grid-template: min-content min-content / 1fr min-content;
   justify-content: space-between;
   row-gap: 2rem;
 
@@ -101,6 +100,7 @@ body {
 
 .topbar input[type="search"] {
   min-height: 2rem;
+  width: 100%;
   padding: 0 1rem;
 
   background-color: hsl(240, 12%, 93%);
@@ -116,6 +116,7 @@ body {
   grid-template-columns: repeat(3, min-content);
   gap: 2rem;
   align-items: center;
+  justify-self: end;
 }
 
 .pfp {
@@ -123,7 +124,7 @@ body {
 }
 
 .label {
-  font-size: 1.125rem;
+  font-size: 1.25rem;
   font-weight: bold;
   text-wrap: nowrap;
 }
@@ -233,7 +234,7 @@ main p {
 .projects h3 {
   margin-bottom: 0.5rem;
 
-  font-size: 1.25rem;
+  font-size: 1.5rem;
 }
 
 .projects nav {
@@ -302,4 +303,5 @@ main p {
 .trending .repo {
   font-size: 1rem;
   color: var(--para);
+  margin-top: 0.25rem;
 }
