@@ -15,6 +15,10 @@ ul {
   padding: 0;
 }
 
+img {
+  object-fit: cover;
+}
+
 :root {
   --primary: #0284c7;
   --shadow: rgb(0 0 0 / 0.2);
